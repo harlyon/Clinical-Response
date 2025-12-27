@@ -7,3 +7,7 @@ numpy>=2.3.3
 pandas>=2.2.0
 scikit-learn==1.6.1
 python-multipart>=0.0.6
+
+pytest>=7.0.0
+pytest-cov>=3.0.0
+httpx>=0.23.0
