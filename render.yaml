@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: clinical-responder-predictor
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn api.index:app --worker-tmp-dir /dev/shm --config gunicorn_config.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.10
+    plan: free
+    autoDeploy: true
