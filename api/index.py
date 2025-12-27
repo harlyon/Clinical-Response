@@ -1,5 +1,6 @@
 from fastapi import UploadFile, File
 import io
+from pathlib import Path
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
@@ -21,13 +22,14 @@ app.add_middleware(
 )
 
 try:
-    model_path = "../models/clinical_response_model.pkl"
-    scaler_path = "../models/clinical_scaler.pkl"
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    model_path = os.path.join(BASE_DIR, "models", "clinical_response_model.pkl")
+    scaler_path = os.path.join(BASE_DIR, "models", "clinical_scaler.pkl")
     model = joblib.load(model_path)
     scaler = joblib.load(scaler_path)
     model_loaded = True
 
-     # Get model's last modified time
+    # Get model's last modified time
     model_mtime = os.path.getmtime(model_path)
     training_date = datetime.fromtimestamp(model_mtime).strftime('%Y-%m-%d')
     

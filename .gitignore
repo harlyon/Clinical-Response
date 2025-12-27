@@ -24,8 +24,8 @@ wheels/
 env/
 venv/
 ENV/
-*.pkl
-*.pyc
+# *.pkl
+# *.pyc
 .ipynb_checkpoints/
 *.ipynb
 .vscode/
