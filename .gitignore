@@ -30,3 +30,4 @@ ENV/
 *.ipynb
 .vscode/
 .idea/" > .gitignore
+vincent/
