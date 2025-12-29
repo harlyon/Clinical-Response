@@ -1,4 +1,4 @@
-# Early Detection of Treatment Non-Response: A Longitudinal Clinical Biomarker Analysis
+# Early Detection of Potential non-responders: A Longitudinal Clinical Biomarker Analysis
 
 ## 🏥 Project Overview
 In many clinical treatments (e.g., immunotherapy), waiting 3-6 months to assess efficacy can be detrimental to non-responders. This project builds a machine learning system to predict **treatment failure vs. response** using only the first **5 days** of biomarker and vital sign data.
