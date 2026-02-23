@@ -31,3 +31,4 @@ ENV/
 .vscode/
 .idea/" > .gitignore
 vincent/
+commits/

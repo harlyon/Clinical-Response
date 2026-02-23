@@ -33,7 +33,7 @@ Raw time-series data was transformed into mechanistic features:
 ## 🚀 How to Run
 1.  **Install Dependencies:** `pip install pandas scikit-learn shap fastapi uvicorn`
 2.  **Run Analysis:** Execute `notebook_analysis.ipynb` to train the model and generate artifacts.
-3.  **Start API:** `uvicorn app:app --reload`
+3.  **Start API:** `uvicorn api.index:app --reload`
 4.  **Test Endpoint:** Send a POST request to `http://127.0.0.1:8000/predict` with patient vitals and **weight**.
 
 ## ⚠️ Limitations
